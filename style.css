@@ -1,0 +1,464 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Ubuntu", sans-serif;
+
+}
+
+.section1 {
+    height: 60vh;
+    opacity: 90%;
+    width: 100%;
+    background: url("change.jpg");
+    filter: sepia(10%) saturate(100%) brightness(70%) hue-rotate(350deg);
+    background-size: cover;
+}
+
+.nav {
+    position: relative;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    height: 4.4em;
+    opacity: 70%;
+}
+
+.nav ul {
+    position: absolute;
+    display: flex;
+    right: 5em;
+    top: 1.5em;
+}
+
+.nav ul li {
+    list-style: none;
+    padding: 0 2em;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    filter: invert(100%);
+}
+
+.nav ul li a img {
+    width: 2em;
+    height: 2em;
+    transition: 0.3s;
+}
+
+nav ul li a img:hover {
+    opacity: 100%;
+    width: 32px;
+}
+
+.section1 .text {
+    position: absolute;
+    color: #ffffff;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    top: 150px;
+    text-shadow: 2px 2px 7px black;
+    /* text-shadow: 0 0 7px rgb(0, 0, 0), 0 0 10px rgb(0, 0, 0),
+        0 0 21px rgb(0, 0, 0), 0 0 42px rgb(255, 255, 255),
+        0 0 82px rgb(255, 255, 255), 0 0 92px rgb(255, 255, 255),
+        0 0 102px rgb(255, 255, 255), 0 0 151px rgb(255, 255, 255); */
+    margin: 3em 8em;
+    letter-spacing: 1px;
+}
+
+.section1 .text p {
+    font-size: 0.8rem;
+}
+
+.section1 .text .btn {
+    border: 3px solid white;
+    padding: 0.5em;
+    margin: 15px 0;
+    border-radius: 4px;
+    text-shadow: none;
+    background: rgba(37, 37, 37, 0.5);
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.section1 .text .btn:hover {
+    background: rgba(37, 37, 37, 0.9);
+    padding: 10px 12px;
+}
+
+.section2 {
+    height: 55vh;
+    position: relative;
+    background: url("sweetbg.jpg");
+    filter: sepia(10%) saturate(100%) brightness(70%) hue-rotate(350deg);
+    background-size: cover;
+    /* background: #7f4019; */
+    flex-wrap: wrap;
+}
+
+.section2 .ourservices {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 60px;
+    justify-content: center;
+    /* align-items: center; */
+    top: 40px;
+    font-size: 1.5em;
+    text-decoration: underline;
+    letter-spacing: 1px;
+    color: white;
+
+}
+
+.boxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    position: absolute;
+    top: 7em;
+}
+
+.boxes .service {
+    width: 30%;
+    border: 5px solid #B57750;
+    background-color: #ffffffc9;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+    padding: 2em;
+    box-shadow: 2px 2px 5px black;
+}
+
+.boxes .service p {
+    font-size: 1em;
+    opacity: 90%;
+}
+
+.boxes .service h3 {
+    margin-bottom: 1.1em;
+    opacity: 90%;
+}
+
+.boxes .service img {
+    position: relative;
+    width: 3em;
+    height: 3em;
+}
+
+.section3 {
+    height: 70vh;
+    background: url("bg3.jpg");
+    background-size: cover;
+    position: relative;
+    /* background-position-y: -1000px; */
+    opacity: 80%;
+    color: white;
+    display: flex;
+}
+
+.section3 .collections {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.section3 .collections .c1 {
+    /* border: 2px solid yellow; */
+    padding: 50px;
+    position: absolute;
+    left: 10em;
+}
+
+.section3 .collections .c1 h1 {
+    font-size: 3em;
+    text-shadow: 2px 1px 1px black;
+    margin-bottom: 3px;
+}
+
+.section3 .collections .c1 p {
+    text-shadow: 2px 1px 1px black,
+        0.5px 0.5px 1px black;
+    font-size: 1em;
+}
+
+
+.section3 .collections .fourboxes {
+    /* border: 2px solid rgb(0, 238, 255); */
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    position: relative;
+    height: 100%;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    left: 12rem;
+    margin-top: 30px;
+}
+
+.section3 .collections .fourboxes .boxy {
+    background: yellowgreen;
+    margin: 30px;
+    /* padding: 10px; */
+    transition: 0.3s;
+    width: 12.5em;
+    height: 18.7em;
+    border-radius: 15px;
+    box-shadow: 2px 4px 8px black;
+    /* z-index: -1; */
+}
+
+.section3 .collections .fourboxes #box1 img {
+    transition: 0.3s;
+    position: absolute;
+    border-radius: 15px;
+    width: 12.5em;
+    height: 18.7em;
+}
+
+.section3 .collections .fourboxes #box1 h5 {
+    position: relative;
+    top: 270px;
+    left: 10px;
+    text-shadow: 8px 8px 10px black, 8px 8px 10px black,
+        -8px -8px 10px black,
+        -8px -8px 10px black;
+    font-size: 18px;
+}
+
+.section3 .collections .fourboxes #box2 img {
+    position: absolute;
+    border-radius: 15px;
+    width: 12.5em;
+    height: 18.7em;
+    transition: 0.3s;
+}
+
+
+
+.section3 .collections .fourboxes #box2 h5 {
+    position: relative;
+    top: 270px;
+    left: 10px;
+    text-shadow: 8px 8px 10px black, 8px 8px 10px black,
+        -8px -8px 10px black,
+        -8px -8px 10px black;
+    font-size: 18px;
+}
+
+.section3 .collections .fourboxes #box3 img {
+    position: absolute;
+    border-radius: 15px;
+    width: 12.5em;
+    height: 18.7em;
+    transition: 0.3s;
+}
+
+
+.section3 .collections .fourboxes #box3 h5 {
+    position: relative;
+    top: 270px;
+    left: 10px;
+    text-shadow: 8px 8px 10px black, 8px 8px 10px black,
+        -8px -8px 10px black,
+        -8px -8px 10px black;
+    font-size: 18px;
+}
+
+.section3 .collections .fourboxes #box4 img {
+    position: absolute;
+    border-radius: 15px;
+    width: 12.5em;
+    height: 18.7em;
+    transition: 0.3s;
+}
+
+
+.section3 .collections .fourboxes #box4 h5 {
+    position: relative;
+    top: 270px;
+    left: 10px;
+    text-shadow: 8px 8px 10px black, 2px 2px 10px black,
+        -2px -2px 10px black,
+        -8px -8px 10px black;
+    font-size: 18px;
+}
+
+.section4 {
+    height: 40vh;
+    background: rgb(180, 255, 110);
+    background-size: cover;
+    position: relative;
+    background-position-y: -1000px;
+    opacity: 80%;
+    color: white;
+    display: flex;
+}
+
+.section4 .maps {
+    width: 100%;
+    height: 40vh;
+}
+
+.section4 .maps .iframe {
+    width: 100%;
+    height: 40vh;
+}
+
+.section5 {
+    height: 55vh;
+    position: relative;
+    width: 100%;
+    background: rgb(198, 157, 23);
+    opacity: 80%;
+    color: rgb(0, 0, 0);
+    /* filter: sepia(10%) saturate(100%) brightness(70%) hue-rotate(350deg); */
+    background-size: cover;
+    /* background: #7f4019; */
+    flex-wrap: wrap;
+}
+
+.section5 .lastpart {
+    display: flex;
+    position: relative;
+    width: 100%;
+    /* border: 2px solid yellow; */
+    height: 100%;
+    padding: 120px;
+}
+
+.section5 .lastpart .all {
+    margin-right: 80px;
+}
+
+.section5 .lastpart .all h3,
+.section5 .lastpart .all h5 {
+    margin: 10px 0;
+}
+
+.section5 .lastpart .all h5 {
+    font-weight: lighter;
+}
+
+.lastpart p {
+    font-weight: 20;
+    color: rgba(0, 0, 0, 0.703);
+    font-size: 12px;
+    margin: 30px 30px;
+}
+
+.section5 .lasttolast {
+    display: flex;
+    flex-direction: column;
+}
+
+.section5 .links {
+    display: flex;
+}
+
+.section5 .links img {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    left: 20px;
+    margin: 8px;
+}
+
+.section5 .links h1 {
+    position: relative;
+    left: 20px;
+    top: 4px;
+    opacity: 0%;
+}
+
+.section3 .collections .fourboxes .boxy:hover {
+    height: 310px;
+    width: 207px;
+}
+
+.section3 .collections .fourboxes #box3 img:hover {
+    height: 310px;
+    width: 207px;
+}
+
+.section3 .collections .fourboxes #box2 img:hover {
+    height: 310px;
+    width: 207px;
+}
+
+.section3 .collections .fourboxes #box1 img:hover {
+    height: 310px;
+    width: 207px;
+}
+
+.section3 .collections .fourboxes #box4 img:hover {
+    height: 310px;
+    width: 207px;
+}
+
+@media (max-width: 1245px) {
+    .section3 .collections .fourboxes {
+        /* border: 2px solid rgb(0, 238, 255); */
+        display: flex;
+        /* flex-direction: row; */
+        width: 100%;
+        position: absolute;
+        flex-wrap: wrap;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+        left: 0px;
+        margin-top: 30px;
+    }
+
+    .section3 .collections .fourboxes .boxy {
+        margin: 50px;
+    }
+
+
+  
+    .boxes .service {
+        width: 30%; 
+        border: 5px solid #B57750;
+        background-color: #ffffffc9;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        flex-wrap: wrap;
+        padding: 2em;
+        box-shadow: 2px 2px 5px black;
+    }
+    
+}
+
+@media (max-width: 690px) {
+    .boxes .service {
+        width: 100%; 
+        border: 5px solid #B57750;
+        background-color: #ffffffc9;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        flex-wrap: wrap;
+        padding: 2em;
+        box-shadow: 2px 2px 5px black;
+        margin: 0.4em 0px;
+    }
+}
